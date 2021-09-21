@@ -35,6 +35,12 @@ span {
 	font-style: italic;
 }
 
+footer {
+	text-align: center;
+	margin: 40px -9px 30px -9px;
+	font-size: 20px;
+}
+
 .texto {
 	width: 700px;
 }
@@ -51,8 +57,9 @@ span {
 
 #principal {
 	width: 1000px;
-	margin: 10px auto;
+	margin: 10px auto 10px auto;
 	border-top: 2px solid black;
+	border-bottom: 2px solid black;
 }
 
 #menu {
