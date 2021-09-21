@@ -259,4 +259,24 @@ i .phone-icon {
 
 #carousel_slide1 {
     background-image: url(../img/slide1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#carousel_slide2 {
+    background-image: url(../img/slide2.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#carousel_slide3 {
+    background-image: url(../img/slide3.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#carousel_slide4 {
+    background-image: url(../img/slide4.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
