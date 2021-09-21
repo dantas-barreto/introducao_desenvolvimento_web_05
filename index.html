@@ -4,11 +4,67 @@
 <head>
     <meta charset="utf-8">
     <title>Cactus Chales</title>
+    <style>
+
+        @keyframes tonext {
+            75% {
+                left: 0;
+            }
+            95% {
+                left: 100%;
+            }
+            98% {
+                left: 100%;
+            }
+            99% {
+                left: 0;
+            }
+        }
+
+        @keyframes tostart {
+            75% {
+                left: 0;
+            }
+            95% {
+                left: -300%;
+            }
+            98% {
+                left: -100%;
+            }
+            99% {
+                left: 0;
+            }
+        }
+
+        @keyframes snap {
+            96% {
+                scroll-snap-align: center;
+            }
+            97% {
+                scroll-snap-align: none;
+            }
+            99% {
+                scroll-snap-align: none;
+            }
+            100% {
+                scroll-snap-align: center;
+            }
+        }
+
+        body {
+            min-width: 37.5rem;
+            margin: 0 auto;
+            padding: 0 1.25rem;
+            font-family: 'Lato', sans-serif;
+        }
+
+
+    </style>
 </head>
 
 <body>
     <div class="container">
-        <div id="home-container">
+        <div id="home">
             <header>
                 <div class="left-header">
                     <span><i class="phone-icon"></i>
@@ -33,23 +89,105 @@
                 <div class="main-header">
                     <div class="logo">
                         <h1>
-                            <a title="Cactus Chalés"><img src="img/logo_paisagem.png"></a>
+                            <a href="#home" title="Cactus Chalés"><img src="img/logo_paisagem.png"></a>
                         </h1>
                     </div>
                     <div class="menu">
                         <ul>
-                            <li>Home</li>
-                            <li>Chalés</li>
-                            <li>Fotos</li>
-                            <li>Reservas</li>
-                            <li>Sobre nós</li>
-                            <li>Contato</li>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#chales">Chalés</a></li>
+                            <li><a href="#fotos">Fotos</a></li>
+                            <li><a href="#reservas">Reservas</a></li>
+                            <li><a href="#sobre-nos">Sobre nós</a></li>
+                            <li><a href="#contato">Contato</a></li>
                         </ul>
                     </div>
                 </div>
             </header>
         </div>
-        <div class="content-container">
+        <!-- /#home -->
+        <div class="home-container">
+            <section class="carousel" aria-label="Gallery">
+                <ol class="carousel_viewport">
+                    <li id="carousel_slide1"
+                        tabindex="0"
+                        class="carousel_slide">
+                        <div class="carousel_snapper">
+                            <a href="#carousel_slide4"
+                                class="carousel_prev">Vá para o ultimo slide</a>
+                            <a href="#carousel_slide2"
+                                class="carousel_next">Vá para o proximo slide</a>
+                        </div>
+                    </li>
+                    <li id="carousel_slide2"
+                        tabindex="0"
+                        class="carousel_slide">
+                        <div class="carousel_snapper"></div>
+                        <a href="#carousel_slide1"
+                            class="carousel_prev">Go to previous slide</a>
+                        <a href="#carousel_slide3"
+                            class="carousel_next">Go to next slide</a>
+                    </li>
+                    <li id="carousel_slide3"
+                        tabindex="0"
+                        class="carousel_slide">
+                        <div class="carousel_snapper"></div>
+                        <a href="#carousel_slide2"
+                            class="carousel_prev">Go to previous slide</a>
+                        <a href="#carousel_slide4"
+                            class="carousel_next">Go to next slide</a>
+                    </li>
+                    <li id="carousel_slide4"
+                        tabindex="0"
+                        class="carousel_slide">
+                        <div class="carousel_snapper"></div>
+                        <a href="#carousel_slide3"
+                            class="carousel_prev">Go to previous slide</a>
+                        <a href="#carousel_slide1"
+                            class="carousel_next">Go to first slide</a>
+                    </li>
+                </ol>
+                <aside class="carousel_navigation">
+                    <ol class="carousel_navigation-list">
+                        <li class="carousel_navigation-item">
+                            <a href="#carousel_slide1"
+                                class="carousel_navigation-button">Vá para o slide 1</a>
+                        </li>
+                        <li class="carousel_navigation-item">
+                            <a href="#carousel_slide2"
+                                class="carousel_navigation-button">Vá para o slide 2</a>
+                        </li>
+                        <li class="carousel_navigation-item">
+                            <a href="#carousel_slide3"
+                                class="carousel_navigation-button">Vá para o slide 3</a>
+                        </li>
+                        <li class="carousel_navigation-item">
+                            <a href="#carousel_slide4"
+                                class="carousel_navigation-button">Vá para o slide 4</a>
+                        </li>
+                    </ol>
+                </aside>
+            </section>
+        </div>
+        <!-- /end #home -->
+        <div class="novidades-container">
+            <div class="container">
+                <div class="title-section">
+                    <h2>Pacotes</h2>
+                </div>
+                <div align="center">
+                    <div>
+                        <img src="img/natal.png" width="85%" align="center"><br><br>
+                        <a href="natal.pdf">Mais informações!</a>
+                    </div>
+                    <div>
+                        <img src="img/ano_novo.png" width="85%" align="center"><br><br>
+                        <a href="ano_novo.pdf">Mais informações!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chales-container">
             
         </div>
     </div>
