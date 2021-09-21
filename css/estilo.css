@@ -121,6 +121,12 @@ i .phone-icon {
     margin-right: 30px;
 }
 
+.main-header {
+    margin: 152px 0 0 0;
+    border: 0;
+    padding: 0;
+}
+
 .carousel {
     position: relative;
     padding-top: 75%;
@@ -255,28 +261,29 @@ i .phone-icon {
     margin: 0;
     padding: 0;
     border: 0;
+    width: 100%;
 }
 
 #carousel_slide1 {
     background-image: url(../img/slide1.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 #carousel_slide2 {
     background-image: url(../img/slide2.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 #carousel_slide3 {
     background-image: url(../img/slide3.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 #carousel_slide4 {
     background-image: url(../img/slide4.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
